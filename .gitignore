@@ -14,3 +14,7 @@ yarn-error.log
 *.log
 logs
 *.swp 
+
+# Docker
+.dockerignore
+Dockerfile 
