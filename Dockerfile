@@ -17,7 +17,8 @@ WORKDIR /app
 
 # Install only prod dependencies early to cache Docker layer
 COPY package.json package-lock.json ./
-RUN npm ci --only=production
+RUN npm install --omit=dev
+
 
 # Copy app code after dependencies are installed
 COPY . .
