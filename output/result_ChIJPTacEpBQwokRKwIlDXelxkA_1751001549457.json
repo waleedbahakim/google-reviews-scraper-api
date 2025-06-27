@@ -1,0 +1,818 @@
+{
+  "success": true,
+  "place_id": "ChIJPTacEpBQwokRKwIlDXelxkA",
+  "place_name": "Statue of Liberty",
+  "review_count": 390,
+  "scrape_date": "2025-06-27T05:19:09.452Z",
+  "reviews": [
+    {
+      "reviewer_name": "Tania Cruz",
+      "rating": 5,
+      "relative_date": "26 minutes ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.388Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.389Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Dipak Panta",
+      "rating": 5,
+      "relative_date": "48 minutes ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.389Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.389Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.389Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Deepak Kumar",
+      "rating": 5,
+      "relative_date": "49 minutes ago",
+      "review_text": "Thanks shortstayindelhi.com to provide me such a big opportunity to see this place . Totally worth it. Short Stay Service Apartments In Saket",
+      "extracted_at": "2025-06-27T05:19:09.389Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "Thanks shortstayindelhi.com to provide me such a big opportunity to see this place . Totally worth it. Short Stay Service Apartments In Saket",
+      "extracted_at": "2025-06-27T05:19:09.389Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Vásquez",
+      "rating": 5,
+      "relative_date": "an hour ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.389Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "VIVEK SASHEENDRAN",
+      "rating": 5,
+      "relative_date": "3 hours ago",
+      "review_text": "A must see when in new york",
+      "extracted_at": "2025-06-27T05:19:09.389Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "A must see when in new york",
+      "extracted_at": "2025-06-27T05:19:09.389Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Paramesh Gs",
+      "rating": 5,
+      "relative_date": "4 hours ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.389Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Cece",
+      "rating": 5,
+      "relative_date": "5 hours ago",
+      "review_text": "We had so much fun. Definitely going back",
+      "extracted_at": "2025-06-27T05:19:09.390Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "We had so much fun. Definitely going back",
+      "extracted_at": "2025-06-27T05:19:09.390Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "i b",
+      "rating": 5,
+      "relative_date": "5 hours ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.390Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Francesca Maria Bascio",
+      "rating": 5,
+      "relative_date": "5 hours ago",
+      "review_text": "My heart place ❤️",
+      "extracted_at": "2025-06-27T05:19:09.390Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "My heart place ❤️",
+      "extracted_at": "2025-06-27T05:19:09.390Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Daniel Emana",
+      "rating": 5,
+      "relative_date": "5 hours ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.390Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Jacek Pinocy",
+      "rating": 5,
+      "relative_date": "6 hours ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.390Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Barbara Cazella",
+      "rating": 5,
+      "relative_date": "6 hours ago",
+      "review_text": "Amazing experience. The boat to the statue leaves from Battery Park and the ride is very quick, but with a beautiful view of the statue and Manhattan. The statue is beautiful and similar to the one in Havana, hahaha, but bigger. The view from the pedestal of the statue is beautiful. We couldn't buy tickets to go up to the crown, it was already sold out. So I suggest buying in advance. It's a really cool ride. Set aside at least 3 hours a day for it. For more tips, follow me on Instagram: @barbaracazella",
+      "extracted_at": "2025-06-27T05:19:09.390Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "Amazing experience. The boat to the statue leaves from Battery Park and the ride is very quick, but with a beautiful view of the statue and Manhattan. The statue is beautiful and similar to the one in Havana, hahaha, but bigger. The view from the pedestal of the statue is beautiful. We couldn't buy tickets to go up to the crown, it was already sold out. So I suggest buying in advance. It's a really cool ride. Set aside at least 3 hours a day for it. For more tips, follow me on Instagram: @barbaracazella",
+      "extracted_at": "2025-06-27T05:19:09.390Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "adamsogood",
+      "rating": 5,
+      "relative_date": "7 hours ago",
+      "review_text": "Awesome place to see America's living history. Recommended to climb up to the pedestal and crown 👑 …",
+      "extracted_at": "2025-06-27T05:19:09.390Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "Awesome place to see America's living history. Recommended to climb up to the pedestal and crown 👑 …",
+      "extracted_at": "2025-06-27T05:19:09.390Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Jithin Jayaseelan",
+      "rating": 5,
+      "relative_date": "7 hours ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.390Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Julio Cesar Dalabona da Silva",
+      "rating": 5,
+      "relative_date": "7 hours ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.390Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "just pic",
+      "rating": 4,
+      "relative_date": "8 hours ago",
+      "review_text": "Book tickets in advance for crown and pedestal access.",
+      "extracted_at": "2025-06-27T05:19:09.390Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "Book tickets in advance for crown and pedestal access.",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Gloria España",
+      "rating": 5,
+      "relative_date": "8 hours ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Alain Alquier12",
+      "rating": 5,
+      "relative_date": "9 hours ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Manuel Paulino",
+      "rating": 5,
+      "relative_date": "9 hours ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Juan Ignacio Valenzuela Molina",
+      "rating": 5,
+      "relative_date": "9 hours ago",
+      "review_text": "Fantastic 😍 …",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "Fantastic 😍 …",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "A D I E G O",
+      "rating": 5,
+      "relative_date": "10 hours ago",
+      "review_text": "Legendary lady ;) 😍 …",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "Legendary lady ;) 😍 …",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "mária Csaja",
+      "rating": 4,
+      "relative_date": "11 hours ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Javier Alonso",
+      "rating": 5,
+      "relative_date": "11 hours ago",
+      "review_text": "Iconic place that needs to be visited a thousand times over",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "Iconic place that needs to be visited a thousand times over",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Chad Feight",
+      "rating": 4,
+      "relative_date": "11 hours ago",
+      "review_text": "Nice experience, but crowded and narrow.",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "Nice experience, but crowded and narrow.",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Justin B.",
+      "rating": 5,
+      "relative_date": "12 hours ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Dāvis Tauriņš",
+      "rating": 5,
+      "relative_date": "12 hours ago",
+      "review_text": "Very beautiful place, I recommend going!",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "Very beautiful place, I recommend going!",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Y K",
+      "rating": 5,
+      "relative_date": "14 hours ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Rengim Melis Köse",
+      "rating": 5,
+      "relative_date": "16 hours ago",
+      "review_text": "There are a bunch of things to do and eat when you reach there",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "There are a bunch of things to do and eat when you reach there",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Fernando Chairez",
+      "rating": 1,
+      "relative_date": "16 hours ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Courtney Ann",
+      "rating": 5,
+      "relative_date": "18 hours ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Razim Halkic",
+      "rating": 5,
+      "relative_date": "22 hours ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Sajid Khan",
+      "rating": 5,
+      "relative_date": "23 hours ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "lis earl (Lisearl)",
+      "rating": 5,
+      "relative_date": "23 hours ago",
+      "review_text": "it was cloudy but interesting to see it up close",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "it was cloudy but interesting to see it up close",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Gamal Suheil",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Leslie Day",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Bongokuhle Nkosi",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "Best view",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "Best view",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Máx Anthony Rodríguez Rivera",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "They're not fooling me, the statue has a heart inside, Nico Bélic discovered it 😎🤏 …",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "They're not fooling me, the statue has a heart inside, Nico Bélic discovered it 😎🤏 …",
+      "extracted_at": "2025-06-27T05:19:09.391Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Suleiman Sultani",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "The Statue of Liberty was even more breathtaking in person! Seeing Lady Liberty up close was a highlight of my trip to NYC. The history, the symbolism, the sheer scale... it's truly an iconic landmark that inspires awe. Getting to take in the stunning views of Manhattan from the pedestal or crown is an unforgettable experience. If you're visiting NYC, Liberty Island is an absolute must-see!",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "The Statue of Liberty was even more breathtaking in person! Seeing Lady Liberty up close was a highlight of my trip to NYC. The history, the symbolism, the sheer scale... it's truly an iconic landmark that inspires awe. Getting to take in the stunning views of Manhattan from the pedestal or crown is an unforgettable experience. If you're visiting NYC, Liberty Island is an absolute must-see!",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "mr rana",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "joanne VVB",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Daria Zimina",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Mervyn Patturaj",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "Just beautiful! Epic!",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "Just beautiful! Epic!",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "PATRICK UDOTAI",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "I loved it.",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "I loved it.",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Liam Yee",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Elijah Schmitz",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Martha Avril",
+      "rating": 4,
+      "relative_date": "a day ago",
+      "review_text": "Thank you, France! Effel (for the structure) and another Frenchman whose name I no longer remember for the rest. …",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "Thank you, France! Effel (for the structure) and another Frenchman whose name I no longer remember for the rest. …",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Erick Barros",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "Very organized and safe, excellent experience.",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "Very organized and safe, excellent experience.",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Rashana Dick",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "It's nicer next time tho",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "It's nicer next time tho",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Sheri Wright",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Carrie K",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "When you purchase your tickets for the ferry ride book them for early morning when it is summer time! Our ferry departed at 8:45 and I was when we returned around noon the lines waiting for the ferry were very long!! Plan for at least an …",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "When you purchase your tickets for the ferry ride book them for early morning when it is summer time! Our ferry departed at 8:45 and I was when we returned around noon the lines waiting for the ferry were very long!! Plan for at least an …",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Muhammad Ramadhan",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "God to allah",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "God to allah",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Leon Eliadze",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "Super",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "Super",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Facundo Bovino Mattanó",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "What can you say about one of the most iconic statues in the country, and undoubtedly in the city? It's beautiful from every angle.",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "What can you say about one of the most iconic statues in the country, and undoubtedly in the city? It's beautiful from every angle.",
+      "extracted_at": "2025-06-27T05:19:09.392Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Jhon Lene",
+      "rating": 1,
+      "relative_date": "a day ago",
+      "review_text": "I am a very happy person 😍 I like romantic songs …",
+      "extracted_at": "2025-06-27T05:19:09.393Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "I am a very happy person 😍 I like romantic songs …",
+      "extracted_at": "2025-06-27T05:19:09.393Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Jeremy M",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.393Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Dinis Branco",
+      "rating": 4,
+      "relative_date": "a day ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.393Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Kavitha manoharan",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.393Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Wil Samudio",
+      "rating": 4,
+      "relative_date": "a day ago",
+      "review_text": "Be ready for long wait times.",
+      "extracted_at": "2025-06-27T05:19:09.393Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "Be ready for long wait times.",
+      "extracted_at": "2025-06-27T05:19:09.393Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Liz Gault",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "It’s great to have something for free and NY city have put on this great experience where you can catch a ferry to Staton Island, disembark and then catch another ferry back to NY. …",
+      "extracted_at": "2025-06-27T05:19:09.393Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "It’s great to have something for free and NY city have put on this great experience where you can catch a ferry to Staton Island, disembark and then catch another ferry back to NY. …",
+      "extracted_at": "2025-06-27T05:19:09.393Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Harshad Mehta",
+      "rating": 1,
+      "relative_date": "a day ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.393Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "matheo marié",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "The statue fell on me and then into the water!!!!!! Photo to support this",
+      "extracted_at": "2025-06-27T05:19:09.393Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "The statue fell on me and then into the water!!!!!! Photo to support this",
+      "extracted_at": "2025-06-27T05:19:09.393Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Biaze Johnson",
+      "rating": 5,
+      "relative_date": "a day ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.393Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Craig",
+      "rating": 4,
+      "relative_date": "a day ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.393Z",
+      "date": "2025-06-26T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Nisar Pathan",
+      "rating": 5,
+      "relative_date": "2 days ago",
+      "review_text": "",
+      "extracted_at": "2025-06-27T05:19:09.393Z",
+      "date": "2025-06-25T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Mogens Troelsen",
+      "rating": 5,
+      "relative_date": "2 days ago",
+      "review_text": "Amazing huge statue of Liberty, really makes you feel American when you go see it, especially if you came from another country. A must see in NY. We also sailed a sunset cruise that took us around the Statue of Liberty island and was beautiful at sunset.",
+      "extracted_at": "2025-06-27T05:19:09.394Z",
+      "date": "2025-06-25T10:49:09Z"
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "rating": null,
+      "relative_date": "Unknown date",
+      "review_text": "Amazing huge statue of Liberty, really makes you feel American when you go see it, especially if you came from another country. A must see in NY. We also sailed a sunset cruise that took us around the Statue of Liberty island and was beautiful at sunset.",
+      "extracted_at": "2025-06-27T05:19:09.394Z",
+      "date": "2025-06-27T10:49:09Z (unknown original date)"
+    },
+    {
+      "reviewer_name": "Mathieu Cristofani",
+      "rating": 5,
+      "relative_date": "2 days ago",
+      "review_text": "Very good, very nice view. Well-maintained park.",
+      "extracted_at": "2025-06-27T05:19:09.394Z",
+      "date": "2025-06-25T10:49:09Z"
+    }
+  ],
+  "metadata": {
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15",
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "url": "https://www.google.com/maps/place/Statue+of+Liberty/@40.6892494,-74.0445004,17z/data=!4m8!3m7!1s0x89c25090129c363d:0x40c6a5770d25022b!8m2!3d40.6892494!4d-74.0445004!9m1!1b1!16zL20vMDcycDg?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D"
+  }
+}
