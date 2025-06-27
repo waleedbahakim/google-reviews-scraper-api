@@ -17,24 +17,28 @@ WORKDIR /app
 
 # Install only prod dependencies early to cache Docker layer
 COPY package.json package-lock.json ./
+
+# Install dependencies (omit dev deps for smaller image)
 RUN npm install --omit=dev
 
-
-# Copy app code after dependencies are installed
+# Copy the rest of your application code
 COPY . .
 
-# Set environment variables
+# Environment variables
 ENV NODE_ENV=production
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 
+# ARG used during docker build for secret injection
 ARG SCRAPER_API_KEY
 ENV SCRAPER_API_KEY=$SCRAPER_API_KEY
 
-# Health check for Railway
+# Add healthcheck for Render/Railway or others
 HEALTHCHECK --interval=30s --timeout=5s --start-period=20s \
   CMD curl -f http://localhost:3000/health || exit 1
 
+# Expose app port
 EXPOSE 3000
 
+# Start your app
 CMD ["node", "api/server.js"]
