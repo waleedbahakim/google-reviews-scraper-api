@@ -5,13 +5,13 @@ import dotenv from 'dotenv';
 import fs from 'fs/promises';
 import path from 'path';
 
-// Load environment variables
+
 dotenv.config();
 
-// Apply stealth plugin
+
 puppeteer.use(StealthPlugin());
 
-// Configuration
+
 const CONFIG = {
   DEBUG: process.env.DEBUG_PUPPETEER === 'true',
   MAX_RETRIES: parseInt(process.env.MAX_RETRIES || '3', 10),
@@ -24,7 +24,7 @@ const CONFIG = {
   LOG_LEVEL: process.env.LOG_LEVEL || 'info'
 };
 
-// User agents for rotation
+
 const USER_AGENTS = [
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -33,7 +33,7 @@ const USER_AGENTS = [
   'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 ];
 
-// Logging utility
+
 class Logger {
   constructor(level = 'info') {
     this.levels = { error: 0, warn: 1, info: 2, debug: 3 };
@@ -59,7 +59,7 @@ class Logger {
 
 const logger = new Logger(CONFIG.LOG_LEVEL);
 
-// Utility functions
+
 class Utils {
   static getRandomItem(array) {
     return array[Math.floor(Math.random() * array.length)];
@@ -79,12 +79,11 @@ class Utils {
 
     const lowerDate = relativeDate.toLowerCase();
     
-    // Handle specific patterns
     if (lowerDate.includes('minute') || lowerDate.includes('hour')) {
       return format(now, "yyyy-MM-dd'T'HH:mm:ss'Z'");
     }
 
-    // Handle "a day ago" and similar formats
+
     if (lowerDate === 'a day ago' || lowerDate === 'yesterday') {
       return format(subDays(now, 1), "yyyy-MM-dd'T'HH:mm:ss'Z'");
     }
@@ -101,13 +100,13 @@ class Utils {
       return format(subYears(now, 1), "yyyy-MM-dd'T'HH:mm:ss'Z'");
     }
     
-    // Handle "edited" prefix
+
     let cleanDate = lowerDate;
     if (lowerDate.startsWith('edited ')) {
       cleanDate = lowerDate.substring(7);
     }
     
-    // Handle numeric patterns (e.g., "2 days ago")
+
     const dayMatch = cleanDate.match(/(\d+)\s*days?\s*ago/);
     if (dayMatch) {
       const days = parseInt(dayMatch[1]);
@@ -132,7 +131,7 @@ class Utils {
       return format(subYears(now, years), "yyyy-MM-dd'T'HH:mm:ss'Z'");
     }
     
-    // Try parsing specific date formats
+
     const datePatterns = [
       'MMMM yyyy', 'MMM yyyy', 'MM/dd/yyyy', 'dd/MM/yyyy',
       'yyyy-MM-dd', 'MM-dd-yyyy', 'dd-MM-yyyy'
@@ -149,7 +148,6 @@ class Utils {
       }
     }
     
-    // If we reach here and the date is "Unknown date", return a placeholder date rather than the raw text
     if (relativeDate === "Unknown date") {
       return format(now, "yyyy-MM-dd'T'HH:mm:ss'Z'") + " (unknown original date)";
     }
@@ -197,7 +195,6 @@ class Utils {
   }
 }
 
-// Browser management
 class BrowserManager {
   constructor() {
     this.browser = null;
@@ -235,17 +232,15 @@ class BrowserManager {
 
     this.page = await this.browser.newPage();
     
-    // Set user agent
     await this.page.setUserAgent(Utils.getRandomItem(USER_AGENTS));
     
-    // Set viewport
+   
     await this.page.setViewport({ 
       width: 1920, 
       height: 1080, 
       deviceScaleFactor: 1 
     });
     
-    // Set extra headers
     await this.page.setExtraHTTPHeaders({
       'Accept-Language': 'en-US,en;q=0.9',
       'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -255,10 +250,9 @@ class BrowserManager {
       'Upgrade-Insecure-Requests': '1'
     });
     
-    // Set default timeout
     this.page.setDefaultTimeout(CONFIG.TIMEOUT);
     
-    // Block unnecessary resources
+    
     await this.page.setRequestInterception(true);
     this.page.on('request', (req) => {
       const resourceType = req.resourceType();
@@ -292,7 +286,7 @@ class BrowserManager {
         
         await Utils.randomDelay(2000, 4000);
         
-        // Check if we're on the right page
+        
         const currentUrl = this.page.url();
         if (currentUrl.includes('google.com/maps')) {
           logger.info('Successfully navigated to Google Maps');
@@ -329,7 +323,7 @@ class BrowserManager {
   }
 }
 
-// Review extraction logic
+
 class ReviewExtractor {
   constructor(page) {
     this.page = page;
@@ -358,9 +352,9 @@ class ReviewExtractor {
       '[data-attrid="title"] span',
       '.x3AX1-LfntMc-header-title-title span',
       'h1 span',
-      '.DUwDvf', // Common class for place name
-      '.fontHeadlineLarge', // Another common class
-      '.OVnw0d .fontHeadlineLarge' // Google Maps 2023+ place name
+      '.DUwDvf', 
+      '.fontHeadlineLarge', 
+      '.OVnw0d .fontHeadlineLarge' 
     ];
 
     for (const selector of selectors) {
@@ -378,7 +372,7 @@ class ReviewExtractor {
       }
     }
 
-    // Try to extract from the page title
+    
     try {
       const pageTitle = await this.page.title();
       if (pageTitle && !pageTitle.includes('Google Maps')) {
@@ -399,7 +393,7 @@ class ReviewExtractor {
   async navigateToReviews() {
     logger.info('Navigating to reviews section...');
     
-    // First try to find and click reviews tab
+    
     const reviewsTabSelectors = [
       'button[data-tab-index="1"]',
       'button[jsaction*="pane.rating.moreReviews"]',
@@ -434,12 +428,12 @@ class ReviewExtractor {
       }
     }
 
-    // If no specific reviews tab found, try to find review elements on current page
+    
     if (!reviewsTabFound) {
       logger.info('No reviews tab found, checking if reviews are already visible...');
     }
 
-    // Wait for reviews to load
+    
     const reviewsWaitSelectors = [
       '[data-review-id]',
       '.jftiEf',
@@ -472,7 +466,7 @@ class ReviewExtractor {
     logger.info('Attempting to sort reviews by newest...');
     
     try {
-      // Look for sort button
+      
       const sortSelectors = [
         'button[data-value="Sort"]',
         'button[jsaction*="sortBy"]',
@@ -498,7 +492,7 @@ class ReviewExtractor {
       }
 
       if (sortButtonFound) {
-        // Look for "Newest" option in dropdown
+        
         const newestSelectors = [
           'div[role="menuitemradio"]:nth-child(2)',
           'div[data-index="1"]',
@@ -534,10 +528,10 @@ class ReviewExtractor {
     
     let previousReviewCount = 0;
     let unchangedScrolls = 0;
-    const maxUnchangedScrolls = 5;  // Increase from 3 to 5 for more patience
+    const maxUnchangedScrolls = 5;  
     
-    for (let i = 0; i < 15; i++) {  // Increase from 10 to 15 scrolls
-      // Scroll in the reviews container
+    for (let i = 0; i < 15; i++) {  
+      
       await this.page.evaluate(() => {
         const containers = [
           document.querySelector('.m6QErb[data-tab-index="1"]'),
@@ -555,17 +549,17 @@ class ReviewExtractor {
         }
       });
       
-      // Wait longer for reviews to load
+      
       await Utils.randomDelay(2000, 4000);
       
-      // Check if new reviews loaded
+      
       const currentReviewCount = await this.page.evaluate(() => {
         const reviewSelectors = [
           '[data-review-id]',
           '.jftiEf',
           '.MyEned',
           '.wiI7pd',
-          '.gws-localreviews__google-review'  // Added another common review class
+          '.gws-localreviews__google-review'  
         ];
         
         for (const selector of reviewSelectors) {
@@ -591,7 +585,7 @@ class ReviewExtractor {
       
       previousReviewCount = currentReviewCount;
       
-      // Stop if we've reached the desired number of reviews
+      
       if (currentReviewCount >= CONFIG.MAX_REVIEWS) {
         logger.info(`Reached maximum reviews limit: ${CONFIG.MAX_REVIEWS}`);
         break;
@@ -624,7 +618,7 @@ class ReviewExtractor {
             await Utils.randomDelay(200, 500);
             expandedCount++;
             
-            // Limit expansion to avoid infinite loops
+            
             if (expandedCount > 20) break;
             
           } catch (error) {
@@ -660,11 +654,11 @@ class ReviewExtractor {
       const cleanText = (text) => text ? text.replace(/\s+/g, ' ').trim() : '';
       
       const extractedReviews = [];
-      const reviewerIds = new Set(); // Track unique reviewers
+      const reviewerIds = new Set(); 
       
       for (const reviewEl of reviewElements) {
         try {
-          // Extract reviewer name
+          
           const nameSelectors = [
             '.d4r55',
             '.TSUbDb',
@@ -686,7 +680,7 @@ class ReviewExtractor {
             reviewerName = 'Anonymous';
           }
           
-          // Extract rating
+          
           const ratingSelectors = [
             'span[role="img"][aria-label*="star"]',
             '.kvMYJc',
@@ -709,7 +703,7 @@ class ReviewExtractor {
             }
           }
           
-          // Try another approach for ratings
+          
           if (rating === null) {
             const ratingStarsEl = reviewEl.querySelector('.QJAzGd');
             if (ratingStarsEl) {
@@ -724,7 +718,7 @@ class ReviewExtractor {
             }
           }
           
-          // Extract date
+          
           const dateSelectors = [
             '.rsqaWe',
             '.DU9Pgb',
@@ -745,7 +739,7 @@ class ReviewExtractor {
             relativeDate = 'Unknown date';
           }
           
-          // Extract review text
+          
           const textSelectors = [
             '.wiI7pd',
             '.MyEned',
@@ -759,19 +753,19 @@ class ReviewExtractor {
             const textEl = reviewEl.querySelector(selector);
             if (textEl && textEl.textContent) {
               reviewText = cleanText(textEl.textContent);
-              if (reviewText.length > 10) break; // Prefer longer text
+              if (reviewText.length > 10) break; 
             }
           }
           
-          // Filter out Google translation notes
+          
           if (reviewText.includes('Translated by Google') && reviewText.length < 30) {
             continue;
           }
           
-          // Create a unique identifier for this review
+          
           const reviewId = `${reviewerName}|${rating}|${reviewText.substring(0, 30)}`;
           
-          // Only add review if not a duplicate and has meaningful data
+          
           if (!reviewerIds.has(reviewId) && (reviewText.length > 0 || rating !== null)) {
             reviewerIds.add(reviewId);
             extractedReviews.push({
@@ -794,7 +788,7 @@ class ReviewExtractor {
     
     logger.info(`Extracted ${reviews.length} reviews`);
     
-    // Convert relative dates to ISO format
+    
     const reviewsWithFormattedDates = reviews.map(review => ({
       ...review,
       date: Utils.convertRelativeDateToISO(review.relative_date)
@@ -804,7 +798,7 @@ class ReviewExtractor {
   }
 }
 
-// Main scraper class
+
 class GoogleMapsReviewScraper {
   constructor() {
     this.browserManager = new BrowserManager();
@@ -818,34 +812,34 @@ class GoogleMapsReviewScraper {
     logger.info(`Starting scrape for place_id: ${placeId}${retryCount > 0 ? ` (retry ${retryCount})` : ''}`);
 
     try {
-      // Launch browser
+      
       await this.browserManager.launch();
       
-      // Check for CAPTCHA early
+      
       const reviewExtractor = new ReviewExtractor(this.browserManager.page);
       await reviewExtractor.checkForCaptcha();
       
-      // Navigate to place
+      
       await this.browserManager.navigateToPlace(placeId);
       await this.browserManager.takeScreenshot(`navigation_${placeId}_${Date.now()}.png`);
       
-      // Get place name
+      
       const placeName = await reviewExtractor.getPlaceName();
       
-      // Navigate to reviews
+      
       await reviewExtractor.navigateToReviews();
       await this.browserManager.takeScreenshot(`reviews_section_${placeId}_${Date.now()}.png`);
       
-      // Sort by newest
+      
       await reviewExtractor.sortReviewsByNewest();
       
-      // Load more reviews
+      
       await reviewExtractor.scrollToLoadMoreReviews();
       
-      // Extract reviews
+      
       const reviews = await reviewExtractor.extractReviews();
       
-      // Prepare result
+      
       const result = {
         success: true,
         place_id: placeId,
@@ -860,7 +854,7 @@ class GoogleMapsReviewScraper {
         }
       };
       
-      // Save result if in debug mode
+      
       if (CONFIG.DEBUG) {
         await Utils.saveDebugFile(`result_${placeId}_${Date.now()}.json`, result, 'json');
       }
@@ -871,14 +865,14 @@ class GoogleMapsReviewScraper {
     } catch (error) {
       logger.error(`Error scraping reviews for ${placeId}:`, error);
       
-      // Retry logic
+      
       if (retryCount < CONFIG.MAX_RETRIES && this.shouldRetry(error)) {
         logger.info(`Retrying... Attempt ${retryCount + 1} of ${CONFIG.MAX_RETRIES}`);
         
-        // Close current browser
+        
         await this.browserManager.close();
         
-        // Exponential backoff
+        
         const backoffTime = Math.pow(2, retryCount) * 2000;
         await new Promise(resolve => setTimeout(resolve, backoffTime));
         
@@ -924,10 +918,10 @@ class GoogleMapsReviewScraper {
       try {
         const result = await this.scrapeReviews(placeId);
         results.push(result);
+
         
-        // Add delay between requests to avoid rate limiting
         if (i < placeIds.length - 1) {
-          const delay = Math.random() * 5000 + 3000; // 3-8 seconds
+          const delay = Math.random() * 5000 + 3000; 
           logger.info(`Waiting ${Math.round(delay/1000)}s before next request...`);
           await new Promise(resolve => setTimeout(resolve, delay));
         }
@@ -948,10 +942,10 @@ class GoogleMapsReviewScraper {
   }
 }
 
-// Export the main scraper class and utility functions
+
 export { GoogleMapsReviewScraper, Utils, Logger, CONFIG };
 
-// Default export for backward compatibility
+
 export default async function scrapeReviews(placeId) {
   const scraper = new GoogleMapsReviewScraper();
   return await scraper.scrapeReviews(placeId);

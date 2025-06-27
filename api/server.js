@@ -26,7 +26,6 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// Reviews endpoint
 app.get('/reviews', async (req, res) => {
   try {
     const { place_id, force } = req.query;
@@ -39,7 +38,6 @@ app.get('/reviews', async (req, res) => {
       });
     }
     
-    // Validate place_id format - accept both ChIJ and 0x formats
     if (!/^(ChIJ|0x)[A-Za-z0-9_-]{10,40}$/.test(place_id)) {
       return res.status(400).json({
         success: false,
@@ -47,7 +45,6 @@ app.get('/reviews', async (req, res) => {
       });
     }
     
-    // Check if we have cached results
     const cacheKey = `reviews_${place_id}`;
     if (!forceRefresh && cache.has(cacheKey)) {
       console.log(`Serving cached results for place_id: ${place_id}`);
@@ -57,10 +54,7 @@ app.get('/reviews', async (req, res) => {
       });
     }
     
-    // If force=true or no cache, do the scraping
     console.log(`Scraping new data for place_id: ${place_id}`);
-    
-    // Set a timeout for the scraping process
     let timeoutId;
     const timeoutPromise = new Promise((_, reject) => {
       timeoutId = setTimeout(() => {
@@ -69,16 +63,12 @@ app.get('/reviews', async (req, res) => {
     });
     
     try {
-      // Race between the scraping and the timeout
       const reviewsData = await Promise.race([
         scrapeReviews(place_id),
         timeoutPromise
       ]);
-      
-      // Clear the timeout if scraping completed before timeout
       clearTimeout(timeoutId);
       
-      // Only cache successful results with reviews
       if (reviewsData.success && reviewsData.reviews && reviewsData.reviews.length > 0) {
         cache.set(cacheKey, reviewsData);
       }
@@ -88,10 +78,7 @@ app.get('/reviews', async (req, res) => {
         cached: false
       });
     } catch (scrapeError) {
-      // Clear the timeout
       clearTimeout(timeoutId);
-      
-      // Check if it's a timeout error
       if (scrapeError.message === 'Scraping took too long to complete') {
         return res.status(504).json({
           success: false,
@@ -100,7 +87,6 @@ app.get('/reviews', async (req, res) => {
         });
       }
       
-      // Otherwise, rethrow for the outer catch block
       throw scrapeError;
     }
   } catch (error) {
@@ -113,18 +99,7 @@ app.get('/reviews', async (req, res) => {
   }
 });
 
-// Cache stats endpoint (for debugging)
-app.get('/cache/stats', (req, res) => {
-  // This is a simple implementation - in a real app you might want to
-  // add authentication for this admin endpoint
-  res.json({
-    timestamp: new Date().toISOString(),
-    total_items: cache.cache.size,
-    cache_ttl: cache.defaultTtl
-  });
-});
 
-// Clear cache endpoint (for debugging)
 app.post('/cache/clear', (req, res) => {
   cache.clear();
   res.json({
@@ -133,7 +108,6 @@ app.post('/cache/clear', (req, res) => {
   });
 });
 
-// Handle 404
 app.use((req, res) => {
   res.status(404).json({
     success: false,
@@ -141,7 +115,6 @@ app.use((req, res) => {
   });
 });
 
-// Global error handler
 app.use((err, req, res, next) => {
   console.error(err);
   res.status(500).json({

@@ -1,6 +1,6 @@
 FROM node:20-slim
 
-# Install Chrome and required libraries
+
 RUN apt-get update \
   && apt-get install -y wget gnupg curl \
   && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | gpg --dearmor -o /usr/share/keyrings/googlechrome-linux-keyring.gpg \
@@ -13,24 +13,24 @@ RUN apt-get update \
     --no-install-recommends \
   && rm -rf /var/lib/apt/lists/*
 
-# Set workdir and copy files
+
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci
+RUN npm install
 COPY . .
 
-# Environment setup
+
 ENV NODE_ENV=production
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome
 
-# Build-time ScraperAPI key
+
 ARG SCRAPER_API_KEY
 ENV SCRAPER_API_KEY=$SCRAPER_API_KEY
 
-# Healthcheck (optional)
+
 HEALTHCHECK --interval=30s --timeout=5s --start-period=20s CMD curl -f http://localhost:3000/health || exit 1
 
-# Expose port and run app
+
 EXPOSE 3000
 CMD ["node", "api/server.js"]
